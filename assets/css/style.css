@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap');
+
+@font-face {
+    font-family: "Darkline";
+    src: url("../font/Darkline.ttf");
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+}
+
+.header
+{
+    width: 100%;
+}
+
+.nav
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav__left .nav__title
+{
+    font-family: 'Darkline';
+    font-size: 42px;
+    color: #262626
+}
+
+.nav__center ul
+{
+    list-style: none;
+    display: flex;
+    margin: 2em;
+}
+
+.nav__center ul li
+{
+    margin: 1em;
+}
+
+.nav__center ul li a
+{
+    text-decoration: none;
+    color: #262626;
+    opacity: .6;
+}
+
+.nav__center ul li a.active
+{
+    opacity: 1;
+}
+
+.nav__right
+{
+    cursor: pointer;
+    background-color: #B8C2CE;
+    width: 6.25em;
+    height: 2.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav__right a
+{
+    color: #fff;
+    text-decoration: none;
+}
