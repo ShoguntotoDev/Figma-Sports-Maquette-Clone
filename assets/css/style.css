@@ -79,14 +79,8 @@
     color: #fff;
 }
 
-.left__img
-{
-    display: flex;
-}
-
 .left .hero__img
 {
-    position: fixed;
     z-index: 1;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
@@ -94,9 +88,7 @@
 
 .left .hero__title
 {
-    position: fixed;
-    margin-top: 1.8rem;
-    margin-left: 11rem;
+    margin-top: 50px;
     text-transform: uppercase;
     font-family: 'Sequel-Sans', sans-serif;
     font-size: 80px;
@@ -109,8 +101,19 @@
 .left .hero__player
 {
     z-index: 3;
-    margin-left: 26rem;
 }
+
+.left__img {
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 2 / 5; }
+    .div2 { grid-area: 1 / 2 / 2 / 6; }
+    .div3 { grid-area: 1 / 6 / 2 / 10; }
 
 p.hero__text
 {
@@ -128,8 +131,6 @@ p.hero__text
 .left__text .hero__btn
 {
     border-radius: 12px;
-    margin-top: 15px;
-    margin-bottom: 10px;
     font-size: 20px;
     display: flex;
     justify-content: center;
