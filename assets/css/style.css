@@ -5,11 +5,17 @@
     src: url("../font/Darkline.ttf");
 }
 
+@font-face {
+    font-family: "Sequel-Sans";
+    src: url("../font/Sequel\ Sans\ Black\ Body.ttf");
+}
+
 *
 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
     font-family: 'DM Sans', sans-serif;
     font-size: 15px;
 }
@@ -47,7 +53,6 @@
 
 .nav__center ul li a
 {
-    text-decoration: none;
     color: #262626;
     opacity: .6;
 }
@@ -61,15 +66,77 @@
 {
     cursor: pointer;
     background-color: #B8C2CE;
-    width: 6.25em;
-    height: 2.2em;
+    width: 6.25rem;
+    height: 2.2rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 5px;
 }
 
 .nav__right a
 {
     color: #fff;
-    text-decoration: none;
+}
+
+.left__img
+{
+    display: flex;
+}
+
+.left .hero__img
+{
+    position: fixed;
+    z-index: 1;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.left .hero__title
+{
+    position: fixed;
+    margin-top: 1.8rem;
+    margin-left: 11rem;
+    text-transform: uppercase;
+    font-family: 'Sequel-Sans', sans-serif;
+    font-size: 80px;
+    background: -webkit-linear-gradient(#262626, #B8C2CE);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 2;
+}
+
+.left .hero__player
+{
+    z-index: 3;
+    margin-left: 26rem;
+}
+
+p.hero__text
+{
+    text-align: center;
+    font-size: 18px;
+}
+
+.left__text
+{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.left__text .hero__btn
+{
+    border-radius: 12px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #fff;
+    background-color: #262626;
+    width: 18rem;
+    height: 4rem;
 }
