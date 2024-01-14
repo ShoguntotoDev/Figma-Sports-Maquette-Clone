@@ -18,7 +18,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 15px;
+    font-size: 16px;
     text-decoration: none;
     font-family: 'DM Sans', sans-serif;
 }
@@ -106,8 +106,8 @@
     display: grid;
     grid-template-columns: repeat(13, 1fr);
     grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
 }
 
 .left__hero__img {
@@ -180,7 +180,6 @@ p.hero__text {
 }
 
 .sidebar .article__info .sidebar__title {
-    font-size: 16px;
     color: #262626;
 }
 
@@ -239,15 +238,14 @@ h2#category__title {
 /* TRENDING NEWS */
 
 #trend__news {
-    margin-top: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    margin: 80px 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .trend__left {
     background-color: #EBEEF3;
+    border-radius: 6px;
 }
 
 .trend__left h2 {
@@ -256,52 +254,58 @@ h2#category__title {
     margin: 2rem;
 }
 
-.trend__left p
-{
+.trend__left p {
     color: #262626;
     opacity: .6;
     font-size: 10px;
 }
 
-.trend__left .desc
-{
+.trend__left .desc {
     font-size: 12px;
     color: #696868;
 }
 
-.trend__left h3
-{
+.trend__left h3 {
     font-family: 'Sequel-Sans', sans-serif;
     color: #262626;
     font-size: 18px;
 }
 
-.trend__left .article__right
-{
+.trend__left .article__right {
     margin: 1rem;
-    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .trend__left article {
     display: flex;
-    margin: .7rem;
+    margin: .8rem;
 }
 
-.trend__left article .trend__right {
+.trend__left .article__border {
+    margin-bottom: 0;
+    border-bottom: 2px solid #B8C2CE;
+}
+
+.trend__right {
     position: relative;
+    border-radius: 6px;
 }
 
-.trend__left hr
-{
-    color: #B8C2CE;
-    width: 15rem;
-    margin-right: 1rem;
+.trend__right .trend__background {
+    background-size: cover;
+    background-image: url("../img/sportsman-drinking-water.png");
+    background-repeat: no-repeat;
+    filter: brightness(35%);
+    height: 100%;
+    width: 100%;
 }
 
 .trend__right .trend__content {
     position: absolute;
-    top: 1964px;
-    margin: 1rem;
+    bottom: 0;
+    margin: 2rem
 }
 
 .trend__right p {
@@ -311,23 +315,131 @@ h2#category__title {
 
 .trend__right h3 {
     font-family: 'Sequel-Sans', sans-serif;
-    font-size: 33px;
+    font-weight: bold;
+    font-size: 32px;
     color: #ffffff;
-}
-
-.trend__right img {
-    width: 100%;
-    filter: brightness(40%);
 }
 
 .trend__right a {
-    z-index: 2;
     position: absolute;
-    top: 1500px;
-    margin: 30px;
-    padding: 10px;
+    top: 0;
+    margin: 3rem 2rem;
+    padding: .5rem 1.5rem;
     font-size: 20px;
-    color: #ffffff;
-    border: solid 1px #fff;
+    color: #EBEEF3;
+    border: solid 1px #EBEEF3;
     border-radius: 3px;
+}
+
+/* SLIDER */
+
+.slider
+{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider__background
+{
+    background-image: url("../img/two-opposing-players-give-handshake.png");
+    width: 1168px;
+    height: 518px;
+    /* background-size: cover; */
+}
+
+.slider__background .slider__overlay
+{
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 2em;
+}
+
+.slider__tag
+{
+    color: #EBEEF3;
+    font-size: 20px;
+    border: 1px solid #EBEEF3;
+    padding: .5rem 1.5rem;
+    border-radius: 3px;
+}
+
+.slider__content
+{
+    width: 62%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.slider__content p
+{
+    color: #F9FAFC;
+    font-size: 18px;
+}
+
+.slider__content .desc
+{
+    font-size: 20px;
+}
+
+.slider__content h3
+{
+    font-family: 'Sequel-Sans', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    color: #ffffff;
+}
+
+.slide
+{
+    background-color: #EBEEF3;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 15px;
+}
+
+.slide i, .slide span
+{
+    margin: 1rem 10px;
+    cursor: pointer;
+}
+
+.slide i
+{
+    color: #EBEEF3;
+    padding: .5rem 1.5rem;
+}
+
+.slide .fa-arrow-left
+{
+    background-color: #BAB8B8;
+    border-radius: 3px;
+}
+
+.slide .fa-arrow-right
+{
+    background-color: #262626;
+    border-radius: 3px;
+}
+
+.slide span
+{
+    color: #262626;
+    opacity: .6;
+    font-size: 24px;
+}
+
+.slide .slide__active
+{
+    color: #EBEEF3;
+    opacity: 1;
+    border-radius: 50%;
+    padding: 0 12px;
+    background-color: #262626;
 }
