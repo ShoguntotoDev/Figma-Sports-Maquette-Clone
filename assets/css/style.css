@@ -431,8 +431,14 @@ h2#category__title {
 
 /* RECENT NEWS */
 
+.section__title
+{
+    display: flex;
+    justify-content: space-between;
+}
+
 #recent__news {
-    margin: 3%;
+    margin: auto 3rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 8rem;
@@ -442,25 +448,23 @@ h2#category__title {
     font-family: 'Sequel-Sans', sans-serif;
     color: #262626;
     font-size: 28px;
+    margin: 6rem 3rem;
 }
 
 .recentnews__left .recentnews__content {
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     bottom: 7rem;
     padding: 15px;
     width: 17rem;
     height: 6.7rem;
-    background: linear-gradient(to top, rgb(177, 124, 9) 35%, rgba(242, 242, 242, 0) 100%);
+    background: linear-gradient(109deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.06) 100%);
+    box-shadow: 0px 0px 50px -25px rgba(0, 0, 0, 0.50);
+    backdrop-filter: blur(50px); 
 }
 
 .recentnews__left .recentnews__content p {
     font-size: 10px;
-    color: #262626;
-    opacity: .6;
+    color: #EBEEF3;
 }
 
 .recentnews__left .recentnews__content h3 {
@@ -474,6 +478,7 @@ h2#category__title {
     flex-direction: column;
     align-items: center;
     background-color: #EBEEF3;
+    height: 310px;
 }
 
 .recentnews__center article {
@@ -518,4 +523,5 @@ h2#category__title {
 
 .recentnews__right {
     background-color: #EBEEF3;
+    height: 310px;
 }
