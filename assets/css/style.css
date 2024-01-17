@@ -45,6 +45,11 @@
     font-family: 'Darkline';
 }
 
+.nav__left i
+{
+    visibility: hidden;
+}
+
 .nav__center ul {
     display: flex;
     margin: 2em;
