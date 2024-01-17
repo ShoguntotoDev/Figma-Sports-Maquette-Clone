@@ -25,7 +25,7 @@ Si vous souhaitez cloner ce projet, suivez ces étapes simples :
 
 ## Captures d'écran
 
-[#]
+[[#]](https://cdn.discordapp.com/attachments/1143258595719389205/1197186420679385130/2024-01-17_15-30-27.mp4?ex=65ba59bd&is=65a7e4bd&hm=4c6183c82004ad4313af49ec2f6520e5cfdb9f697f6d6c31835953ca6e7ed6f9&)https://cdn.discordapp.com/attachments/1143258595719389205/1197186420679385130/2024-01-17_15-30-27.mp4?ex=65ba59bd&is=65a7e4bd&hm=4c6183c82004ad4313af49ec2f6520e5cfdb9f697f6d6c31835953ca6e7ed6f9&
 
 ## Remerciements
 Remerciements à [Figma](https://www.figma.com/) pour la maquette originale qui a inspiré ce projet.
