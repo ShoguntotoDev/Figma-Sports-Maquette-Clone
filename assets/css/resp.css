@@ -26,6 +26,11 @@
         margin: 30px;
     }
 
+    .nav__right i
+    {
+        display: none;
+    }
+
     .left .hero__title {
         display: none;
     }
