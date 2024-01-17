@@ -2,6 +2,8 @@
 
 Ce projet est une reproduction d'une maquette Figma d'un site d'actualités sportives avec une communauté intégrée. La maquette originale peut être consultée [ici](https://www.figma.com/file/jIOwJUHE20VSykIJucrIeP/Sports-news-websites-(Community)?type=design&node-id=0%3A1&mode=design&t=37p3aweBImG8x7Te-1).
 
+Le site web peut être consulté [ici](https://thunderous-gumption-834005.netlify.app/)
+
 ## Objectif du Projet
 
 L'objectif principal de ce projet est de pratiquer et d'améliorer mes compétences en développement web, en particulier en HTML et CSS. La maquette Figma fournit un excellent point de départ pour créer une version fonctionnelle du site.
