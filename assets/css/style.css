@@ -27,6 +27,10 @@
 
 .header {
     width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 4;
 }
 
 .nav {
@@ -90,7 +94,7 @@
     background: -webkit-linear-gradient(#262626, #B8C2CE);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    z-index: 3;
+    z-index: 2;
     text-transform: uppercase;
 }
 
@@ -99,7 +103,7 @@
     top: 110px;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 5;
+    z-index: 3;
 }
 
 .left__img {
@@ -184,8 +188,7 @@ p.hero__text {
 }
 
 
-.global__container
-{
+.global__container {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -193,8 +196,7 @@ p.hero__text {
     margin: auto auto;
 }
 
-.global__container > section
-{
+.global__container>section {
     width: 100%;
 }
 
@@ -244,7 +246,7 @@ p.hero__text {
 }
 
 h2#category__title {
-    margin: 2rem;
+    margin-top: 3rem;
     font-size: 28px;
     font-family: 'Sequel-Sans', sans-serif;
 }
@@ -252,6 +254,7 @@ h2#category__title {
 /* TRENDING NEWS */
 
 #trend__news {
+    margin-top: 3rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -458,20 +461,17 @@ h2#category__title {
     margin: 6rem 0 2rem;
 }
 
-.recentnews__actu > div
-{
+.recentnews__actu>div {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
 }
 
-.recentnews__actu > div > article
-{
+.recentnews__actu>div>article {
     position: relative;
 }
 
-.recentnews__img 
-{
+.recentnews__img {
     height: 350px;
 }
 
@@ -483,7 +483,7 @@ h2#category__title {
     height: 6.7rem;
     background: linear-gradient(109deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.06) 100%);
     box-shadow: 0px 0px 50px -25px rgba(0, 0, 0, 0.50);
-    backdrop-filter: blur(50px); 
+    backdrop-filter: blur(50px);
 }
 
 .recentnews__actu .recentnews__content p {
@@ -542,8 +542,7 @@ h2#category__title {
     cursor: pointer;
 }
 
-.recentnews__btn a
-{
+.recentnews__btn a {
     color: #fff;
 }
 
@@ -556,29 +555,25 @@ h2#category__title {
 
 /* SPORTS ARTICLE */
 
-#sportsarticle__title
-{
+#sportsarticle__title {
     font-family: 'Sequel-Sans', sans-serif;
     color: #262626;
     font-size: 28px;
 }
 
-.sports__article
-{
+.sports__article {
     display: flex;
     gap: 2rem;
 }
 
-.sports__article article
-{
+.sports__article article {
     position: relative;
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-.sports__article .sportsarticle__tag
-{
+.sports__article .sportsarticle__tag {
     position: absolute;
     top: 0;
     right: 0;
@@ -590,47 +585,40 @@ h2#category__title {
     border-radius: 3px;
 }
 
-.sports__article .sportsarticle__writter
-{
+.sports__article .sportsarticle__writter {
     display: flex;
     gap: 1rem;
     align-items: center;
 }
 
-.sports__article .sportsarticle__writter p
-{
+.sports__article .sportsarticle__writter p {
     font-size: 14px;
 }
 
-.sports__article .sportsarticle__content
-{
+.sports__article .sportsarticle__content {
     display: flex;
     flex-direction: column;
     gap: .8rem;
 }
 
-.sports__article .sportsarticle__content .date
-{
+.sports__article .sportsarticle__content .date {
     font-size: 14px;
     color: #262626;
     opacity: .6;
 }
 
-.sports__article .sportsarticle__content h3
-{
+.sports__article .sportsarticle__content h3 {
     font-family: 'Sequel-Sans', sans-serif;
     color: #262626;
     font-size: 22px;
 }
 
-.sports__article .sportsarticle__content p
-{
+.sports__article .sportsarticle__content p {
     font-size: 16px;
     color: #696868;
 }
 
-.sportsarticle__btn
-{
+.sportsarticle__btn {
     margin-top: 30px;
     display: flex;
     gap: 2rem;
@@ -655,4 +643,148 @@ h2#category__title {
 .sportsarticle__btn .fa-arrow-right {
     background-color: #262626;
     border-radius: 3px;
+}
+
+/* NEWSLETTER SUBSCRIPTION */
+
+.newslettersubscription {
+    display: flex;
+    justify-content: space-between;
+    background-color: #EBEEF3;
+}
+
+.newsletter__left {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter__left h3 {
+    padding: 68px;
+    font-family: 'Sequel-Sans', sans-serif;
+    color: #262626;
+    font-size: 60px;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #262626 0%, #B8C2CE 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.newsletter__left input {
+    position: relative;
+    border-radius: 6px 0 0 6px;
+    border: 1px solid #262626;
+    width: 514px;
+    height: 58px;
+    margin-bottom: 60px;
+}
+
+.newsletter__left input::placeholder {
+    text-align: center;
+    font-size: 21px;
+    color: #262626;
+    opacity: .4;
+}
+
+.newsletter__left .input span {
+    position: absolute;
+    background-color: #262626;
+    border-radius: 0px 6px 6px 0px;
+    height: 58px;
+    width: 75px;
+}
+
+.newsletter__left .input span i {
+    transform: rotate(-45deg);
+    color: #fff;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    padding-right: 15px;
+}
+
+.newsletter__right {
+    position: relative;
+}
+
+.newsletter__vector {
+    position: absolute;
+    top: 20px;
+    left: 15px;
+}
+
+.newsletter__img {
+    z-index: 2;
+    position: relative;
+}
+
+/* FOOTER */
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__left {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer__left a {
+    margin: auto auto;
+    padding: 15px 18px;
+    border-radius: 4px;
+    background: #262626;
+    width: 50px;
+    height: 50px;
+}
+
+.footer__left i {
+    color: #fff;
+    font-size: 20px;
+}
+
+.footer__slide {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 15px;
+}
+
+.footer__slide i,
+.footer__slide span {
+    margin: 1rem .7rem;
+    cursor: pointer;
+}
+
+.footer__slide i {
+    color: #EBEEF3;
+    padding: .5rem 1.5rem;
+}
+
+.footer__slide .fa-arrow-left {
+    background-color: #BAB8B8;
+    border-radius: 3px;
+}
+
+.footer__slide .fa-arrow-right {
+    background-color: #262626;
+    border-radius: 3px;
+}
+
+.footer__slide span {
+    color: #262626;
+    opacity: .6;
+    font-size: 24px;
+}
+
+.footer__slide .slide__active {
+    color: #EBEEF3;
+    opacity: 1;
+    border-radius: 50%;
+    padding: 0 12px;
+    background-color: #262626;
 }
