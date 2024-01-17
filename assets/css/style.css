@@ -183,6 +183,21 @@ p.hero__text {
     color: #262626;
 }
 
+
+.global__container
+{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 1168px;
+    margin: auto auto;
+}
+
+.global__container > section
+{
+    width: 100%;
+}
+
 /* CATEGORY */
 
 .category {
@@ -190,7 +205,6 @@ p.hero__text {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(1, 1fr);
     gap: 30px;
-    margin: 0 100px;
 }
 
 
@@ -238,7 +252,6 @@ h2#category__title {
 /* TRENDING NEWS */
 
 #trend__news {
-    margin: 80px 100px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -431,71 +444,84 @@ h2#category__title {
 
 /* RECENT NEWS */
 
-.section__title
-{
-    display: flex;
-    justify-content: space-between;
-}
-
 #recent__news {
-    margin: auto 3rem;
+    margin: auto auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 8rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
 }
 
 .recentnews__title {
     font-family: 'Sequel-Sans', sans-serif;
     color: #262626;
     font-size: 28px;
-    margin: 6rem 3rem;
+    margin: 6rem 0 2rem;
 }
 
-.recentnews__left .recentnews__content {
+.recentnews__actu > div
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.recentnews__actu > div > article
+{
     position: relative;
-    bottom: 7rem;
+}
+
+.recentnews__img 
+{
+    height: 350px;
+}
+
+.recentnews__actu .recentnews__content {
+    position: absolute;
+    bottom: 0;
     padding: 15px;
-    width: 17rem;
+    width: 100%;
     height: 6.7rem;
     background: linear-gradient(109deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.06) 100%);
     box-shadow: 0px 0px 50px -25px rgba(0, 0, 0, 0.50);
     backdrop-filter: blur(50px); 
 }
 
-.recentnews__left .recentnews__content p {
+.recentnews__actu .recentnews__content p {
     font-size: 10px;
     color: #EBEEF3;
 }
 
-.recentnews__left .recentnews__content h3 {
+.recentnews__actu .recentnews__content h3 {
     font-family: 'Sequel-Sans', sans-serif;
     font-size: 16px;
     color: #EBEEF3;
 }
 
-.recentnews__center {
+.articles {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #EBEEF3;
-    height: 310px;
+    height: 350px;
+    width: 270px;
+
 }
 
-.recentnews__center article {
+.articles article {
     display: flex;
     gap: 8px;
     padding: 8px;
 }
 
-.recentnews__center .article__right p {
+.articles .article__right p {
     font-size: 10px;
     color: #262626;
     opacity: .6;
 }
 
-.recentnews__center .article__right h3 {
+.articles .article__right h3 {
     font-family: 'Sequel-Sans', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     color: #262626
 }
 
@@ -521,7 +547,112 @@ h2#category__title {
     color: #fff;
 }
 
-.recentnews__right {
+.recentnews__ranking img {
     background-color: #EBEEF3;
-    height: 310px;
+    height: 350px;
+    width: 570px;
+    object-fit: contain;
+}
+
+/* SPORTS ARTICLE */
+
+#sportsarticle__title
+{
+    font-family: 'Sequel-Sans', sans-serif;
+    color: #262626;
+    font-size: 28px;
+}
+
+.sports__article
+{
+    display: flex;
+    gap: 2rem;
+}
+
+.sports__article article
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.sports__article .sportsarticle__tag
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #EBEEF3;
+    font-size: 20px;
+    border: 1px solid #EBEEF3;
+    margin: 10px;
+    padding: .5rem 1.5rem;
+    border-radius: 3px;
+}
+
+.sports__article .sportsarticle__writter
+{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.sports__article .sportsarticle__writter p
+{
+    font-size: 14px;
+}
+
+.sports__article .sportsarticle__content
+{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.sports__article .sportsarticle__content .date
+{
+    font-size: 14px;
+    color: #262626;
+    opacity: .6;
+}
+
+.sports__article .sportsarticle__content h3
+{
+    font-family: 'Sequel-Sans', sans-serif;
+    color: #262626;
+    font-size: 22px;
+}
+
+.sports__article .sportsarticle__content p
+{
+    font-size: 16px;
+    color: #696868;
+}
+
+.sportsarticle__btn
+{
+    margin-top: 30px;
+    display: flex;
+    gap: 2rem;
+}
+
+.sportsarticle__btn i,
+.sportsarticle__btn span {
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
+.sportsarticle__btn i {
+    color: #EBEEF3;
+    padding: .5rem 1.5rem;
+}
+
+.sportsarticle__btn .fa-arrow-left {
+    background-color: #BAB8B8;
+    border-radius: 3px;
+}
+
+.sportsarticle__btn .fa-arrow-right {
+    background-color: #262626;
+    border-radius: 3px;
 }
