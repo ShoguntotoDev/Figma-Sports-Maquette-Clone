@@ -24,6 +24,9 @@ Si vous souhaitez cloner ce projet, suivez ces étapes simples :
 5. **Push:** Poussez vos modifications vers votre fork sur GitHub.
 
 ## Captures d'écran
+<video src="https://cdn.discordapp.com/attachments/1143258595719389205/1197186420679385130/2024-01-17_15-30-27.mp4?ex=65ba59bd&is=65a7e4bd&hm=4c6183c82004ad4313af49ec2f6520e5cfdb9f697f6d6c31835953ca6e7ed6f9&" controls>
+<video src = "https://cdn.discordapp.com/attachments/1195070138144272537/1197223981078560808/Sport_News_-_Home_-_Personnel_Microsoft_Edge_2024-01-17_17-59-45.mp4?ex=65ba7cb8&is=65a807b8&hm=ba0422a898d8bed5edec72c7e96d95a03a581804af6f101fab77de4893721998&" controls>
+<video src = "https://cdn.discordapp.com/attachments/1195070138144272537/1197231553877647450/Sport_News_-_Home_-_Personnel_Microsoft_Edge_2024-01-17_18-30-12.mp4?ex=65ba83c5&is=65a80ec5&hm=cbc0fce33d70baa3758d37b4e295134366230568717354253a415968ac7dcd4d&" controls>
 
 ## Remerciements
 Remerciements à [Figma](https://www.figma.com/) pour la maquette originale qui a inspiré ce projet.
