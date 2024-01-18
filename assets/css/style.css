@@ -40,13 +40,13 @@
 }
 
 .nav__left .nav__title {
+    cursor: pointer;
     color: #262626;
     font-size: 42px;
     font-family: 'Darkline';
 }
 
-.nav__left i
-{
+.nav__left i {
     visibility: hidden;
 }
 
@@ -61,6 +61,8 @@
 }
 
 .nav__center ul li a {
+    position: relative;
+    padding-bottom: 4px;
     color: #262626;
     opacity: .6;
 }
@@ -68,6 +70,24 @@
 .nav__center ul li a.active {
     opacity: 1;
 }
+
+.nav__center ul li a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    background-image: linear-gradient(90deg, black, black);
+    background-size: 0 2px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    transition: background-size .3s ease-in;
+}
+
+.nav__center ul li a:hover::before {
+    background-size: 100% 2px;
+}
+
 
 .nav__right {
     display: flex;
@@ -82,6 +102,11 @@
 
 .nav__right a {
     color: #fff;
+}
+
+.nav__right:hover {
+    transition: background-color .3s;
+    background-color: #BAB8B8;
 }
 
 /* HERO BANNER */
@@ -160,6 +185,13 @@ p.hero__text {
     cursor: pointer;
 }
 
+.left__text .hero__btn:hover {
+    transition-duration: .3s;
+    background-color: #fff;
+    border: 1px solid #696868;
+    color: #444;
+}
+
 .sidebar .sidebar__btn {
     padding: 8px;
     font-size: 20px;
@@ -169,8 +201,13 @@ p.hero__text {
 }
 
 .sidebar .article {
+    cursor: pointer;
     position: relative;
-    margin-top: 15px;
+    margin-top: 40px;
+}
+
+.sidebar .article:hover {
+    transform: scale(1.1);
 }
 
 .sidebar .article__info {
@@ -227,6 +264,7 @@ p.hero__text {
 }
 
 .category .text {
+    cursor: pointer;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -237,6 +275,7 @@ p.hero__text {
 }
 
 .category img {
+    cursor: pointer;
     width: 100%;
 }
 
@@ -245,6 +284,12 @@ p.hero__text {
     flex-direction: column;
     gap: 30px;
 }
+
+.category img:hover,
+.category .text:hover {
+    transform: scale(1.1);
+}
+
 
 #basket {
     height: 170px;
@@ -279,6 +324,12 @@ h2#category__title {
     color: #262626;
     opacity: .6;
     font-size: 10px;
+}
+
+.trend__left img:hover {
+    transform: scale(1.1);
+    padding: 10px;
+    cursor: pointer
 }
 
 .trend__left .desc {
@@ -352,6 +403,15 @@ h2#category__title {
     border-radius: 3px;
 }
 
+.trend__right a:hover {
+    transform: scale(1.1);
+}
+
+.trend__content:hover {
+    transform: scale(1.1);
+    padding: 10px;
+}
+
 /* SLIDER */
 
 .slider {
@@ -377,6 +437,7 @@ h2#category__title {
 }
 
 .slider__tag {
+    cursor: pointer;
     color: #EBEEF3;
     font-size: 20px;
     border: 1px solid #EBEEF3;
@@ -480,6 +541,11 @@ h2#category__title {
     height: 350px;
 }
 
+.recentnews__left:hover
+{
+    transform: scale(1.1);
+}
+
 .recentnews__actu .recentnews__content {
     position: absolute;
     bottom: 0;
@@ -518,6 +584,12 @@ h2#category__title {
     padding: 8px;
 }
 
+.articles article:hover
+{
+    transform: scale(1.1);
+    padding: 15px;
+}
+
 .articles .article__right p {
     font-size: 10px;
     color: #262626;
@@ -551,12 +623,23 @@ h2#category__title {
     color: #fff;
 }
 
+.recentnews__btn:hover
+{
+    transform: scale(1.1);
+}
+
 .recentnews__ranking img {
     background-color: #EBEEF3;
     height: 350px;
     width: 570px;
     object-fit: contain;
 }
+
+.recentnews__ranking img:hover
+{
+    transform: scale(1.05);
+}
+
 
 /* SPORTS ARTICLE */
 
@@ -576,6 +659,11 @@ h2#category__title {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+}
+
+.sports__article article:hover
+{
+    transform: scale(1.1);
 }
 
 .sports__article .sportsarticle__tag {
@@ -745,6 +833,12 @@ h2#category__title {
     background: #262626;
     width: 50px;
     height: 50px;
+}
+
+.footer__left a:hover
+{
+    transition-duration: .2s;
+    background-color: #B8C2CE;
 }
 
 .footer__left i {
